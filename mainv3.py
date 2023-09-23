@@ -1,10 +1,11 @@
 while True:
     zahl1 = int(input('Taschenrechner:\nBitte erste Zahl eingeben:'))
     zahl2 = int(input('Bitte zweite Zahl eingeben:'))
-    if zahl2 == 0:
-        print ('0 ist eine unzulässige Zahl!')
+    rz = input('Und das Rechenzeichen eingeben: / oder * oder + oder -:')
+    if zahl2 == 0 and rz == '/':
+        print ('Durch 0 teilen ist nicht zulässig!')
     else:
-        rz = input('Und das Rechenzeichen eingeben: / oder * oder + oder -:')
+
         match rz:
             case '+':
                 erg1 = zahl1+zahl2
