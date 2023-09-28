@@ -1,7 +1,8 @@
 while True:
-    zahl1 = int(input('Taschenrechner:\nBitte erste Zahl eingeben:'))
-    zahl2 = int(input('Bitte zweite Zahl eingeben:'))
+    zahl1 = float(input('Taschenrechner:\nBitte erste Zahl eingeben:'))
+    zahl2 = float(input('Bitte zweite Zahl eingeben:'))
     rz = input('Und das Rechenzeichen eingeben: / oder * oder + oder -:')
+    
     if zahl2 == 0 and rz == '/':
         print ('Durch 0 teilen ist nicht zulässig!')
     else:
